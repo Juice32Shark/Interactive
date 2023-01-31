@@ -1,0 +1,84 @@
+@font-face {
+	font-family: "XuanHuang 32 Regular";
+	src: url("XuanHuang-32-Regular.ttf");
+}
+@font-face {
+	font-family: "Arial";
+	src: url("Arial.TTF");
+}
+@font-face {
+	font-family: "Arial Black";
+	src: url("Arial Black.ttf");
+}
+@font-face {
+	font-family: "Arial Bold Italic";
+	src: url("Arial Bold Italic.ttf");
+}
+body {
+	background-color: rgba(1, 1, 1, 1.00);
+	color: hsla(0,0%,50%,1.00);
+}
+.A{
+	font-size: 139px;	
+}
+.about{
+	font-size: 79px;	
+}
+.xuan{
+	font-family: "XuanHuang 32 Regular";
+	line-height: 0px
+}
+.Arial{
+	font-family: Arial;
+}
+.Juice{
+	color: hsla(4,82%,24%,1.00);
+	font-size: 25px;
+	font-family: Arial Black;
+}
+.SYNOPSIS{
+	font-family: "XuanHuang 32 Regular";
+	font-size: 35px;
+}
+.blod{
+	font-family: Arial Black;
+}
+.ltalic{
+	font-family: Arial Bold Italic;
+}.ltalic{
+	font-family: Arial Bold Italic;
+}
+.img{
+
+}
+.img img{
+	width: 100%;
+}
+.ulli li{
+	list-style: none;
+}
+.ulli li u{
+	color: hsla(3,92%,15%,1.00);
+	font-size: 56px;
+	font-family: "XuanHuang 32 Regular";
+}
+.ulli li a{
+	color: hsla(3,92%,15%,1.00);
+		font-size: 56px;
+	font-family: "XuanHuang 32 Regular";
+}
+.the3{
+	color: hsla(120,1%,22%,1.00);
+	font-size: 25px;
+	text-align: left;
+	text-decoration: inherit
+}
+.red2{
+	color: hsla(3,92%,15%,1.00);
+	font-weight: bold;
+	
+}
+.Our{
+	font-size: 16px;
+	line-height: 0px;
+}

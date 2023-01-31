@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color: rgba(0, 0, 0, 1.00);
+}
+@font-face {
+	font-family: "XuanHuang-32-Regular";
+	src: url("XuanHuang-32-Regular.ttf");
+}
+h1{
+	line-height: 0px;
+}
+h2{
+	line-height: 0px;
+}
+.bt{
+	font-family: XuanHuang-32-Regular;
+	font-size: 70px;
+	line-height: 0px;
+	color: rgba(128, 128, 128, 1.00);
+}
+.bt2 {
+	padding-top: 13px;
+	font-family: XuanHuang-32-Regular;
+	font-size: 70px;
+	line-height: 0px;
+	color: rgba(128, 128, 128, 1.00);
+}
+.bt2 img {
+	width: 270px;
+}
+.bt2 span {}
+.bt h2 {
+	font-size: 170px;
+}
+h1 span {
+	font-size: 30px
+}
+.bt3 {
+	font-size: 26px;
+	color: rgba(128, 128, 128, 1.00);
+	text-transform: uppercase;
+
+}
+.h4 {}
+.h6 {
+	font-size: 16px;
+	margin: 0;
+	color: rgba(128, 128, 128, 1.00);
+}
+@font-face {
+	font-family: "Arial Black";
+	src: url("Arial Black.ttf");
+}
+.form {
+	font-family: "Arial Black";
+	letter-spacing: -9px;
+}
+.off {
+	color: rgba(128, 128, 128, 1.00);
+}
+.the {
+	color: rgba(128, 128, 128, 1.00) !important;
+}
+.the3{
+	color:rgba(54,54,54,1.00)!important;
+}
+.amo {
+	color: rgba(128, 128, 128, 1.00) !important;
+}
+.red {
+	color: rgba(107, 18, 10, 1.00);
+	font-size: 16px;
+	font-style: italic
+}
+.red2{
+	color: rgba(107, 18, 10, 1.00);
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-family: XuanHuang-32-Regular;
+}
+.red2 li{
+	list-style: none
+}
+.red2 a {
+	color: rgba(107, 18, 10, 1.00);
+	
+	font-family: XuanHuang-32-Regular;
+	font-size: 42px;
+}
+.bq{
+	text-align: center;
+}
+@font-face {
+	font-family: "Arial";
+	src: url("Arial.TTF");
+}
+@font-face {
+	font-family: "Arial Black";
+	src: url("Arial Black.ttf");
+}
+@font-face {
+	font-family: "Arial Bold Italic";
+	src: url("Arial Bold Italic.ttf");
+}
+.Arial{
+	font-family: Arial;
+}
+.blod{
+	font-family: Arial Black;
+}
+.ltalic{
+	font-family: Arial Bold Italic;
+}
+/*
+.bt22{
+	line-height: 0px;
+}
+.bt22{
+	line-height: 0px;
+}
+*/
+.bt4{
+	color: rgba(128, 128, 128, 1.00);
+/*	font-family: XuanHuang-32-Regular;*/
+	font-size: 110px;	
+	line-height: 0px;
+}
+.bt4 h2{
+	line-height: 0px;
+}
+.bt3-1{
+	font-family: XuanHuang-32-Regular;
+	color: hsla(0,0%,51%,1.00);
+	font-size: 40px;
+}
+.text{
+	color: hsla(0,0%,51%,1.00);
+	font-family: XuanHuang-32-Regular;
+	font-size: 190px!important;
+	
+}
+.text img{
+	width: 260px;
+}
+.let{
+	color: hsla(0,0%,51%,1.00);
+	font-size: 75px;
+	font-family:  Arial Black;
+	letter-spacing: -9px;
+	text-transform: uppercase;
+}
+h1{
+	line-height: 60px!important
+}
