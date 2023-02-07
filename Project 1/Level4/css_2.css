@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	
+	 background: url( " background_02.png")center no-repeat fixed;
+    background-size: 1300px;
+    background-position: top;
+	background-color: rgba(0, 0, 0, 1.00);
+}
+@font-face {
+	font-family: "XuanHuang-32-Regular";
+	src: url("XuanHuang-32-Regular.ttf");
+}
+h1{
+	line-height: 0px;
+}
+h2{
+	line-height: 0px;
+}
+.bt{
+	font-family: XuanHuang-32-Regular;
+	font-size: 70px;
+	line-height: 0px;
+	color: rgba(128, 128, 128, 1.00);
+}
+.bt2 {
+	padding-top: 13px;
+	font-family: XuanHuang-32-Regular;
+	font-size: 70px;
+	line-height: 0px;
+	color: rgba(128, 128, 128, 1.00);
+}
+.bt2 img {
+	width: 270px;
+}
+.bt2 span {}
+.bt h2 {
+	font-size: 170px;
+}
+h1 span {
+	font-size: 30px
+}
+.bt3 {
+	font-size: 26px;
+	color: rgba(128, 128, 128, 1.00);
+	text-transform: uppercase;
+	margin-top: -90px;
+	margin-left: 20px
+}
+.h4 {}
+.h6 {
+	font-size: 16px;
+	margin: 0;
+	color: rgba(128, 128, 128, 1.00);
+}
+@font-face {
+	font-family: "Arial Black";
+	src: url("Arial Black.ttf");
+}
+.form {
+	font-family: "Arial Black";
+	letter-spacing: -9px;
+}
+.off {
+	color: rgba(128, 128, 128, 1.00);
+}
+.the {
+	color: rgba(128, 128, 128, 1.00) !important;
+}
+.the3{
+	margin: 0;
+}
+.amo {
+	color: rgba(128, 128, 128, 1.00) !important;
+}
+.red {
+	color: rgba(107, 18, 10, 1.00);
+	font-size: 16px;
+	font-style: italic
+}
+.red2{
+	color: rgba(107, 18, 10, 1.00);
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-family: XuanHuang-32-Regular;
+}
+.red2 li{
+	list-style: none
+}
+.red2 a {
+	color:#7a0000;
+	
+	font-family: XuanHuang-32-Regular;
+	font-size: 42px;
+}
+.bq{
+	text-align: center;
+}
+@font-face {
+	font-family: "Arial";
+	src: url("Arial.TTF");
+}
+@font-face {
+	font-family: "Arial Black";
+	src: url("Arial Black.ttf");
+}
+@font-face {
+	font-family: "Arial Bold Italic";
+	src: url("Arial Bold Italic.ttf");
+}
+.Arial{
+	font-family: Arial;
+}
+.blod{
+	font-family: Arial Black;
+}
+.ltalic{
+	font-family: Arial Bold Italic;
+}
+/*
+.bt22{
+	line-height: 0px;
+}
+.bt22{
+	line-height: 0px;
+}
+*/
+.bt4{
+	color: rgba(128, 128, 128, 1.00);
+/*	font-family: XuanHuang-32-Regular;*/
+	font-size: 110px;	
+	line-height: 0px;
+}
+.bt4 h2{
+	line-height: 0px;
+}
+.bt3-1{
+	font-family: XuanHuang-32-Regular;
+	color: hsla(0,0%,51%,1.00);
+	font-size: 27px;
+}
+.text{
+	
+	font-family: XuanHuang-32-Regular;
+	font-size: 136px!important;
+	
+}
+.text img{
+	width: 260px;
+}
+.let{
+	color: hsla(0,0%,51%,1.00);
+	font-size: 75px;
+	font-family:  Arial Black;
+	letter-spacing: -9px;
+	text-transform: uppercase;
+}
+h1{
+	line-height: 60px!important
+}
+.bj4{
+	background-color: rgba(129,129,129,1.00);
+	color: rgba(0,0,0,1.00)!important;
+	width: 700px;
+	padding: 5px;
+	margin-left: 23px;
+}
+.bj4 h4{
+    margin: 0;
+    margin-top: -15px;
+}
+.ma{
+	margin-bottom: 0px;
+	
+}
+.mad2{
+	margin-left: 15px;
+}
+.dweei{
+
+	 writing-mode: vertical-rl;    
+    writing-mode: sideways-rl;
+position: fixed;
+    top: 0;
+    right: 0;
+	
+}
+.bq{
+	margin-top: 30px;
+	background-color:rgba(129,129,129,1.00);
+}
+.img5{
+	width: 100%;
+	margin-top: 40px;
+}

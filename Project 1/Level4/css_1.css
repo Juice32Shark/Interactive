@@ -1,0 +1,135 @@
+body{
+	margin: 0;
+}
+@font-face {
+	font-family: "XuanHuang 32 Regular";
+	src: url("XuanHuang-32-Regular.ttf");
+}
+@font-face {
+	font-family: "Arial";
+	src: url("Arial.TTF");
+}
+@font-face {
+	font-family: "Arial Black";
+	src: url("Arial Black.ttf");
+}
+@font-face {
+	font-family: "Arial Bold Italic";
+	src: url("Arial Bold Italic.ttf");
+}
+body {
+	background-color: rgba(1, 1, 1, 1.00);
+	color: hsla(0,0%,50%,1.00);
+}
+.A{
+	font-size: 139px;	
+}
+.about{
+	font-size: 79px;	
+}
+.xuan{
+	font-family: "XuanHuang 32 Regular";
+	line-height: 0px;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 0px
+}
+.about {
+    font-size: 40px;
+}
+.Arial{
+	font-family: Arial;
+}
+.Juice{
+	color:#7a0000;
+	font-size: 39px;
+	font-family: "XuanHuang 32 Regular";
+    text-align: center;
+    
+}
+.SYNOPSIS{
+	font-family: "XuanHuang 32 Regular";
+	font-size: 55px;
+    background-color:rgba(129,129,129,1.00);
+    color: black;
+    padding-bottom: 6px;
+    
+}
+.blod{
+	font-family: Arial Black;
+}
+.ltalic{
+	font-family: Arial Bold Italic;
+}.ltalic{
+	font-family: Arial Bold Italic;
+}
+.img{
+
+}
+.img img{
+	width: 100%;
+}
+.ulli{
+   
+	
+    padding-top: 140px;
+/*	writing-mode:left-right-top-bottom;*/
+/*	horizontal-tb:left-right-top-bottom;*/
+}
+.ulli li{
+	list-style: none;	
+	display: inline-block;
+	
+}
+.ulli li u{
+	color: #7a0000;
+	font-size: 56px;
+		 writing-mode: vertical-lr;
+    
+    writing-mode: sideways-rl;
+	font-family: "XuanHuang 32 Regular";	
+}
+.ulli li a{
+	color: #7a0000;;
+		font-size: 56px;
+	font-family: "XuanHuang 32 Regular";
+
+}
+.the3{
+	text-align: center;
+	color: hsla(120,1%,22%,1.00);
+	font-size: 25px;	
+	text-decoration: inherit;
+	margin: 0;
+	margin-top: 100px;
+}
+.red2{
+	
+	color:rgba(122,0,0,1.00);
+	font-weight: bold;
+	font-size: 24px;
+}
+.Our{
+	font-size: 18px;
+	display: inline-block;
+    padding-top: 30px;
+}
+.center{
+    text-align: center;
+}
+.it{
+    text-align: center;
+}
+.bj{
+    background: url( "png_01.png")center no-repeat;
+    background-size: 600px;
+    background-position: top;
+    text-align: center;
+}
+.bq{
+	background-color: rgba(129,129,129,1.00);
+	
+}
+.a1{
+	
+}

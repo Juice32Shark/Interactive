@@ -1,0 +1,98 @@
+img {
+  height: 800px;
+  display: block;
+}
+
+#img-0 {
+  width: 50px;
+position: absolute;
+top:30px;
+left: 100px;
+}
+
+#img-1 {
+   width: 80px;
+position: absolute;
+top:30px;
+left: 180px;
+  
+}
+
+#img-2 {
+     width: 100px;
+position: absolute;
+top:30px;
+left: 300px;
+  
+}
+
+#img-3 {
+  
+}
+
+#img-4 {
+    height: 80px;
+     width: 800px;
+position: absolute;
+top:170px;
+right: 50px;
+  
+}
+
+#img-5 {
+  height: 100px;
+     width: 800px;
+position: absolute;
+top:30px;
+right: 50px;
+  
+}
+
+#img-6 {
+  width: 560px;
+  height: 50px;
+position: absolute;
+bottom:290px;
+right: 50px;
+}
+
+#img-7 {
+   width: 560px;
+  height: 20px;
+position: absolute;
+bottom:380px;
+right: 50px;
+}
+
+#img-8 {
+  height: 40px;
+     width: 800px;
+position: absolute;
+top:280px;
+right: 50px;
+  
+}
+
+#img-9 {
+    height: 120px;
+     width: 800px;
+position: absolute;
+bottom:35px;
+right: 50px;
+}
+
+#img-10 {
+    height: 40px;
+     width: 800px;
+position: absolute;
+bottom:200px;
+right: 50px;
+}
+
+#img-11 {
+  width: 560px;
+  height: 50px;
+position: absolute;
+bottom:450px;
+right: 50px;
+}
