@@ -1,0 +1,26 @@
+/*
+  1. inline block with vertical-align: top
+  2. flex with justify-content: center
+*/
+
+.page {
+  border: 1px solid red;
+  display: flex;
+  width: 30%;
+  border: 1px solid red;
+}
+
+.column {
+  border: 1px solid blue;
+  
+  /* flex: 1;*/
+}
+
+img {
+  width: 300px;
+}
+
+.caption {
+  font-weight: bold;
+  font-family:sans-serif;
+}

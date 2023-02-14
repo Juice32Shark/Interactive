@@ -1,0 +1,40 @@
+/*
+  1. with position: absolute
+  2. with position: relative
+  2. with grid
+    - rows: auto auto auto
+    - split apart wrapper-3
+*/
+.page {
+  border: 1px solid red;
+  position: relative;
+display: grid;
+grid-template-columns: 300px 300px 300px;
+grid-template-rows: 300px 300px 300px;
+}
+
+.img-small,
+.caption {
+  width: 30%;
+}
+
+.img-large {
+  width: 60%;
+}
+
+.wrapper {
+  border: 1px solid blue;
+  margin: 1em;
+}
+
+.top{
+display: flex;
+grid-column-start: 1;
+grid-column-end:3 ;
+grid-row-start: 1;
+grid-row-end:2
+}
+
+.bottom{
+
+}

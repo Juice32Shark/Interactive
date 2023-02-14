@@ -1,0 +1,207 @@
+body{
+	margin: 0;
+}
+@media (max-width:700px)
+{
+	.it{
+		
+		font-size: 2px
+	}
+    .medio-77{
+        font-size: 12px!important;
+    }
+}
+
+@media (max-width:1300px)
+{
+	.paddingtop{
+	padding-top: 200px!important;
+	
+}
+}
+@media (max-width:600px)
+{
+
+	.it{		
+		font-size: 0.4px
+	}
+}
+@media (max-width:700px)
+{
+
+		.paddingtop{
+	padding-top: 100px!important;
+	
+}
+}
+@font-face {
+	font-family: "XuanHuang 32 Regular";
+	src: url("XuanHuang-32-Regular.ttf");
+}
+@font-face {
+	font-family: "Arial";
+	src: url("Arial.TTF");
+}
+@font-face {
+	font-family: "Arial Black";
+	src: url("Arial Black.ttf");
+}
+@font-face {
+	font-family: "Arial Bold Italic";
+	src: url("Arial Bold Italic.ttf");
+}
+body {
+	background-color: rgba(1, 1, 1, 1.00);
+	color: hsla(0,0%,50%,1.00);
+}
+.A{
+	font-size: 139px;	
+}
+.about{
+	font-size: 79px;	
+}
+.xuan{
+	font-family: "XuanHuang 32 Regular";
+	margin-bottom: 0px;
+	
+    text-align: center;
+    font-size: 70px;
+    margin-top: 0px
+}
+.about {
+    font-size: 40px;
+}
+.Arial{
+	font-family: Arial;
+}
+.Juice{
+	color:#7a0000;
+	font-size: 39px;
+	font-family: "XuanHuang 32 Regular";
+    text-align: center;
+    
+}
+.SYNOPSIS{
+	font-family: "XuanHuang 32 Regular";
+	font-size: 55px;
+    background-color:rgba(129,129,129,1.00);
+    color: black;
+    padding-bottom: 6px;
+    
+}
+.blod{
+	font-family: Arial Black;
+}
+.ltalic{
+	font-family: Arial Bold Italic;
+}.ltalic{
+	font-family: Arial Bold Italic;
+}
+.img{
+position: fixed;
+	z-index: -1111
+}
+.img img{
+	width: 100%;
+}
+
+.ulli{
+    position: absolute;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    top: 69%;
+	left: 51%;
+    transform: translateX(-50%) rotate(90deg);
+    
+}
+.ulli li{
+	
+	list-style: none;	
+	display:block;
+	
+}
+.ulli li u{
+	color: #7a0000;
+	font-size: 56px;
+    
+	font-family: "XuanHuang 32 Regular";	
+	 
+}
+.ulli li a{
+	color: #7a0000;;
+		font-size: 56px;
+	font-family: "XuanHuang 32 Regular";
+
+}
+.the3{
+	text-align: center;
+	color: hsla(120,1%,22%,1.00);
+	font-size: 25px;	
+	text-decoration: inherit;
+	margin: 0;
+	margin-top: 100px;
+}
+.red2{
+	
+	color:rgba(122,0,0,1.00);
+	font-weight: bold;
+	font-size: 24px;
+}
+.Our{
+	font-size: 18px;
+	display: inline-block;
+    padding-top: 30px;
+}
+.center{
+    text-align: center;
+}
+.it{
+    text-align: center;
+}
+.bj{
+height: 510px;
+    background-size: 600px;
+    background-position: top;
+    
+}
+.bq{
+	text-align: center;
+}
+.the3{
+	margin: 0;
+    color: black;
+    text-transform:inherit!important;
+    font-size: 13px;
+}
+.bq{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin-top: 30px;
+	background-color:rgba(129,129,129,1.00);
+}
+.bq a{
+    font-size: 16px;
+        letter-spacing: 0px;
+    font-family: "XuanHuang 32 Regular";
+}
+.a1{
+	
+}
+.pa-bott{
+	margin: 70px 0px;
+}
+.fixdeimg{
+	position: fixed;
+	left: 50%;
+	top: 69%;
+	transform: translate(-50%,-50%);
+	width:600px;
+	z-index: -1
+}
+.paddingtop{
+	padding-top: 300px;
+	
+}
