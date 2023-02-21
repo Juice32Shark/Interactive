@@ -1,0 +1,310 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    margin: 0;
+	padding:25px;
+	 background: url( " background_02.png")center no-repeat fixed;
+    background-size: 1300px;
+    background-position: top;
+    z-index: -1;
+	background-color: rgba(0, 0, 0, 1.00);
+}
+@font-face {
+	font-family: "XuanHuang-32-Regular";
+	src: url("XuanHuang-32-Regular.ttf");
+}
+h1{
+	line-height: 0px;
+}
+h2{
+	line-height: 0px;
+}
+.bt{
+	font-family: XuanHuang-32-Regular;
+	font-size: 70px;
+	line-height: 0px;
+	color: rgba(128, 128, 128, 1.00);
+}
+.bt2 {
+	padding-top: 13px;
+	font-family: XuanHuang-32-Regular;
+	font-size: 70px;
+	line-height: 0px;
+	color: rgba(128, 128, 128, 1.00);
+}
+.bt2 img {
+	width: 270px;
+}
+.bt2 span {}
+.bt h2 {
+	font-size: 170px;
+}
+h1 span {
+	font-size: 30px
+}
+.bt3 {
+	font-size: 19px;
+	color: rgba(128, 128, 128, 1.00);
+	text-transform: uppercase;
+	margin-top: -90px;
+	
+}
+.h4 {}
+.h6 {
+	font-size: 16px;
+	margin: 0;
+	color: rgba(128, 128, 128, 1.00);
+}
+@font-face {
+	font-family: "Arial Black";
+	src: url("Arial Black.ttf");
+}
+.form {
+	font-family: "Arial Black";
+	letter-spacing: -9px;
+}
+.off {
+	color: rgba(128, 128, 128, 1.00);
+}
+.the {
+	color: rgba(128, 128, 128, 1.00) !important;
+}
+.the3{
+	margin: 0;
+}
+.amo {
+	color: rgba(128, 128, 128, 1.00) !important;
+}
+.red {
+	color: rgba(107, 18, 10, 1.00);
+	font-size: 16px;
+	font-style: italic
+}
+.red2{
+	color: rgba(107, 18, 10, 1.00);
+	font-size: 16px;
+/*	letter-spacing: 1px;*/
+	font-family: XuanHuang-32-Regular;
+}
+.red2 li{
+	list-style: none
+}
+.red2 a {
+	color:#7a0000;
+	
+	font-family: XuanHuang-32-Regular;
+	font-size: 42px;
+}
+.bq{
+	text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+@font-face {
+	font-family: "Arial";
+	src: url("Arial.TTF");
+}
+@font-face {
+	font-family: "Arial Black";
+	src: url("Arial Black.ttf");
+}
+@font-face {
+	font-family: "Arial Bold Italic";
+	src: url("Arial Bold Italic.ttf");
+}
+.Arial{
+	font-family: Arial;
+}
+.blod{
+	font-family: Arial Black;
+}
+.ltalic{
+	font-family: Arial Bold Italic;
+}
+/*
+.bt22{
+	line-height: 0px;
+}
+.bt22{
+	line-height: 0px;
+}
+*/
+.bt4{
+	color: rgba(128, 128, 128, 1.00);
+/*	font-family: XuanHuang-32-Regular;*/
+	font-size: 110px;	
+	line-height: 0px;
+}
+.bt4 h2{
+	line-height: 0px;
+}
+.bt3-1{
+	font-family: XuanHuang-32-Regular;
+	color: hsla(0,0%,51%,1.00);
+	font-size: 27px;
+}
+.text{	
+    
+	font-family: XuanHuang-32-Regular;
+	font-size: 356px!important;	
+}
+.text img{
+	width: 260px;
+}
+.let{
+	color: hsla(0,0%,51%,1.00);
+	font-size: 75px;
+	font-family:  Arial Black;
+	letter-spacing: -9px;
+	text-transform: uppercase;
+}
+h1{
+	line-height: 60px!important
+}
+.bj4{
+	background-color: rgba(129,129,129,1.00);
+	color: rgba(0,0,0,1.00)!important;
+	width: 97%;
+    right: 1.5%;
+    left: 1.5%;
+	position: fixed;
+	
+    
+}
+.bj4 span{
+    font-size:80px;
+}
+.bj4 h4{
+    text-align:center;
+    margin: 0;
+    margin-top: 15px;
+    font-size: 131px;
+}
+.ma{
+	margin-bottom: 0px;
+	
+}
+.mad2{
+	
+}
+.dweei{
+	 writing-mode: vertical-rl;    
+    writing-mode: sideways-rl;
+position: fixed;
+    top: 38%;
+    right: 0;
+	
+}
+.bq{
+	margin-top: 30px;
+	background-color:rgba(129,129,129,1.00);
+}
+.img5{
+	width: 100%;
+	margin-top: 40px;
+}
+.ma-top222{
+    margin-top: 0px;
+}
+.ma-tio11{
+    margin: 320px 0px;
+}
+.unip{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.fanzhuan{
+    mix-blend-mode: difference
+}
+.img222{
+  
+    
+}
+.img222{
+    width: 100%;
+    position: absolute;
+    left: 5%;
+    top: -430%;
+     opacity: 0;
+    transition: all .5s;
+    z-index: -111;
+}
+.hover33{
+    position: relative;
+    cursor: pointer;
+    z-index: 999999;
+    
+}
+.hover33:hover .img222{
+    opacity: 1!important;
+}
+.donts22{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.donts22 a{
+    font-size: 24px;
+}
+.imgtop33{
+    height:500px;
+}
+.imgtop33 img{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+.pad-le666{
+    padding-left: 25px;
+}
+
+@media (max-width:1620px)
+{
+  .dweei{
+	 writing-mode: vertical-rl;    
+    writing-mode: sideways-rl;
+position: fixed;
+    top: 32%;
+    right: 0;
+	
+}
+}@media (max-width:1220px)
+{
+  .dweei{
+	 writing-mode: vertical-rl;    
+    writing-mode: sideways-rl;
+position: fixed;
+    top: 25%;
+    right: 0;
+	
+}
+}
+@media (max-width:870px)
+{
+    .bq h5{
+        font-size: 19px
+    }
+    .donts22 a{
+    font-size: 19px;
+}
+      .dweei{
+	 writing-mode: vertical-rl;    
+    writing-mode: sideways-rl;
+    position: fixed;
+    top: 20%;
+    right: 0;
+	
+}
+}
+@media (max-width:670px)
+{
+       .donts22 a{
+    font-size: 12px;
+}
+    .bq h5{
+        font-size: 12px
+    }
+}
