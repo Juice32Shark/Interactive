@@ -259,7 +259,7 @@ img {
 .zong .img5{
     position: absolute;
     left: 50%;
-    top: 29%;
+    top: 32%;
     transform: translateX(-50%);
 }
 .zong .img6{
@@ -430,7 +430,7 @@ img {
 }
 .overhied{
     width: 320px;
-    height: 147px;
+    height: 128px;
   overflow-y: scroll
 }
 .img2{
