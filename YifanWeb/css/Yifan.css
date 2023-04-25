@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.box{
+    width: 600px;
+    height: 800px;
+    margin:50px auto;
+    position: relative;
+}
+
+.A{
+    width: 150px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    
+}
+.B{
+    width: 150px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+.C{
+    width: 150px;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+}
+.D{
+    width: 150px;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+
+    
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.bigIMg{
+    width: 250px;
+    height: 400px;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
