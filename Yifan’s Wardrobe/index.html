@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>title</title>
+    <style>
+        * {
+            /* font-family: 'MV Boli'; */
+            /* font-family: 'Comic Sans Ms'; */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        :root {
+            --main-size: 15px
+        }
+
+        .main {
+            position: relative;
+            font-size: var(--main-size);
+            width: 100vw;
+            height: 100vh;
+            background: #fefefe;
+            overflow-x: hidden;
+            display: flex;
+            /* align-items: center; */
+            margin-top: 1.5em;
+            justify-content: center;
+        }
+
+        .main-box {
+            position: relative;
+            background: #fff;
+            width: 60em;
+            height: 50em;
+        }
+
+        .select-clothing-box {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .select-clothing {
+            position: absolute;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            z-index: 10;
+        }
+
+        .select-clothing img {
+            width: 10em;
+            transition: .08s;
+            object-fit: cover;
+        }
+
+        .select-clothing-top {
+            top: 0;
+        }
+
+        .select-clothing-bottom {
+            bottom: 0;
+        }
+
+        .gif-content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gif-content img {
+            position: absolute;
+            width: 15em;
+            object-fit: cover;
+        }
+
+        .gif-content img:not(.gif-active) {
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display:flex;justify-content: center;">
+        <h2 style="font-weight: 400;width: 60em;font-size: 1.2em;">This is her current outfit. For work and school
+            reasons,
+            she decided to
+            stop wearing
+            clothes that were too
+            feminine and switched to a more neutral style. She started throwing away all colors and focusing on
+            all-black
+            outfits.
+            (Drag clothes onto her body to change her outfit)</h2>
+    </div>
+    <div class="main">
+        <div class="main-box">
+            <div class="select-clothing-box">
+                <div class="select-clothing select-clothing-top">
+                    <img src="./png&gif/A1.png" data-index="0" draggable="true" alt="">
+                    <img src="./png&gif/A2.png" data-index="2" draggable="true" alt="">
+                </div>
+                <div class="select-clothing select-clothing-bottom">
+                    <img src="./png&gif/A3.png" data-index="1" draggable="true" alt="">
+                    <img src="./png&gif/A4.png" data-index="3" draggable="true" alt="">
+                </div>
+                <div class="gif-content">
+                    <img src="./png&gif/Grownup1.gif" class="gif-active" alt="">
+                    <img src="./png&gif/Grownup2.gif" alt="">
+                    <img src="./png&gif/Grownup3.gif" alt="">
+                    <img src="./png&gif/Grownup4.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/em.js"></script>
+    <script>
+        (() => {
+            function size() {
+                const maxWidth = window.innerWidth
+                em.class.main[0].style.fontSize = maxWidth <= 838 ? '10px' : ''
+                if (maxWidth <= 323) {
+                    em.class.main[0].style.fontSize = '6px'
+                }
+            }
+            window.onresize = size
+            size()
+        })();
+        (() => {
+            const selectClothing = em.class['select-clothing']
+            const selectClothingBox = em.class['select-clothing-box'][0]
+            const gifContent = em.class['gif-content']
+            const selectChildren = selectClothing.flatMap(item => Array.from(item.children))
+            const clothings = []
+            const gifChildren = gifContent.flatMap(item => Array.from(item.children))
+            selectChildren.forEach((item, index) => clothings[item.dataset.index] = gifChildren[index])
+            let startX = 0;
+            let startY = 0;
+            let pcStartX = 0
+            let pcStartY = 0
+            selectChildren.forEach((item, i) => {
+                em.events.tags = [item]
+                function start(e) {
+                    const touches = e.targetTouches
+                    if (touches) {
+                        startX = e.targetTouches[0].pageX;
+                        startY = e.targetTouches[0].pageY;
+                    } else {
+                        pcStartX = e.pageX;
+                        pcStartY = e.pageY;
+                    }
+                }
+                em.events.touchstart = start
+                em.events.dragstart = start
+                function move(e) {
+                    const touches = e.targetTouches
+                    let moveX = 0
+                    let moveY = 0
+                    if (touches) {
+                        moveX = e.targetTouches[0].pageX - startX;
+                        moveY = e.targetTouches[0].pageY - startY;
+                    } else {
+                        moveX = e.pageX - pcStartX;
+                        moveY = e.pageY - pcStartY;
+                    }
+                    this.style.transform = `translate(${moveX}px,${moveY}px)`;
+                    e.preventDefault();
+                }
+                em.events.drag = move
+                em.events.touchmove = move
+                function end(e) {
+                    const touches = e.changedTouches
+                    let x = 0
+                    let y = 0
+                    if (touches) {
+                        x = e.changedTouches[0].pageX
+                        y = e.changedTouches[0].pageY
+                    } else {
+                        x = e.pageX
+                        y = e.pageY
+                    }
+                    const position = clothings[0].getBoundingClientRect()
+                    if (x >= position.left && x <= position.right && y >= position.top && y <= position.bottom)
+                        selectChildren.forEach((item) => {
+                            const index = item.dataset.index
+                            const classList = clothings[index].classList
+                            String(i) !== index ? (classList.remove('gif-active')) : classList.add('gif-active')
+                        })
+                    this.style.transform = `translate(0px,0px)`;
+                }
+                em.events.touchend = end
+                em.events.dragend = end
+            })
+        })()
+    </script>
+</body>
+
+</html>

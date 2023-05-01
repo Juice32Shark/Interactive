@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小学时期</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .main {
+            position: relative;
+            font-size: 15px;
+            width: 100vw;
+            height: 100vh;
+            background: #fefefe;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .main-box {
+            position: relative;
+            background: #fff;
+            width: 60em;
+            height: 50em;
+        }
+
+        .box {
+            position: relative;
+        }
+
+        .text {
+            font-weight: 400;
+            font-size: 1.2em;
+        }
+
+        .drag-img {
+            position: absolute;
+            left: 0;
+            z-index: 10;
+            /* t0 */
+        }
+
+        img {
+            width: 10em;
+        }
+
+        .gif-box {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .gif-box img:first-of-type {
+            width: 15em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-box">
+            <div class="box">
+                <h2 class="text">This is her childhood clothes. Influenced by early cartoons and her parents, she
+                    dresses in
+                    a
+                    colorful style
+                    with an obvious sense of lightness.
+                    (Drag this uniform to see her middle school wear)</h2>
+                <img class="drag-img" draggable="true" src="./All clothes/衣服-2_0000_Layer-16.png" alt="">
+            </div>
+            <div class="gif-box">
+                <img class="fixed-img" src="./png&gif/PrimarySchool.gif" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="./js/em.js"></script>
+    <script>
+        em.events.tags = [em.class['drag-img']]
+        function start(e) {
+            const touches = e.targetTouches
+            if (touches) {
+                startX = e.targetTouches[0].pageX;
+                startY = e.targetTouches[0].pageY;
+            } else {
+                pcStartX = e.pageX;
+                pcStartY = e.pageY;
+            }
+        }
+        em.events.touchstart = start
+        em.events.dragstart = start
+        function move(e) {
+            const touches = e.targetTouches
+            let moveX = 0
+            let moveY = 0
+            if (touches) {
+                moveX = e.targetTouches[0].pageX - startX;
+                moveY = e.targetTouches[0].pageY - startY;
+            } else {
+                moveX = e.pageX - pcStartX;
+                moveY = e.pageY - pcStartY;
+            }
+            this.style.zIndex = '10'
+            this.style.transform = `translate(${moveX}px,${moveY}px)`;
+            e.preventDefault();
+        }
+        em.events.drag = move
+        em.events.touchmove = move
+        function end(e) {
+            const touches = e.changedTouches
+            let x = 0
+            let y = 0
+            if (touches) {
+                x = e.changedTouches[0].pageX
+                y = e.changedTouches[0].pageY
+            } else {
+                x = e.pageX
+                y = e.pageY
+            }
+            const fixedImg = em.class['fixed-img'][0]
+            const position = fixedImg.getBoundingClientRect()
+            if (x >= position.left && x <= position.right && y >= position.top && y <= position.bottom) {
+                location.href = "./3.html"
+            }
+            this.style.transform = `translate(0px,0px)`;
+        }
+        em.events.touchend = end
+        em.events.dragend = end
+    </script>
+</body>
+
+</html>
