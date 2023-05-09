@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+    body{
+        min-width: 1330px;
+        overflow: hidden;
+        
+        background: url( "../img/743a9f71912e7a099f3942ceaf52697.png")top no-repeat;
+        background-size: 100%;
+        perspective: 1000px;
+    }
+.zong {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+   
+    transform-style: preserve-3d;
+    transition: all 2s;
+   
+  
+    background-size: 100%;
+    /* 设置透视，实现近大远小的效果 */
+    
+    
+}
+@keyframes gogogo {
+0% {
+transform: rotateY(-180deg);
+}
+50% {
+transform: rotateY(0deg);
+}
+100% {
+transform: rotateY(180deg);
+}
+}
+@keyframes gogogo2 {
+0% {
+transform: rotateY(0deg);
+}
+50% {
+transform: rotateY(180deg);
+}
+100% {
+transform: rotateY(360deg);
+}
+}
+/*
+			.zong:hover .img{
+		transform: rotateY(180deg);
+	}
+	.zong:hover .img2{
+		transform: rotateY(0deg);
+	}
+*/
+.img2 {
+    position: absolute;
+    top: 0;
+    left: 22%;
+    backface-visibility: hidden;
+    
+    animation: gogogo2 3s infinite linear;
+}
+.img {
+     position: absolute;
+    top: 0;
+    left: 22%;
+    backface-visibility: hidden;
+    
+    animation: gogogo 3s infinite linear;
+}
+.img3 {
+    position: absolute;
+    z-index: 10;
+}
+.img6{
+    position: absolute;
+    z-index: 999;
+    left: 55%;
+   
+}
+.img4 {
+    z-index: -111!important;
+}
+.img5 {
+    z-index: 99999!important;
+}
+.img9 {
+    position: absolute;
+    top: 0px;    
+    left: 25%;
+}
+    .img img{
+    width: 60%;
+    }.img2 img{
+    width: 60%;
+    }.img6{
+  width: 600px;
+        margin-left: 200px;
+    }
